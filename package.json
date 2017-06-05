@@ -1,0 +1,7 @@
+{
+  "name": "frontend-task",
+  "version": "1.0.0",
+  "description": "Frontend task for TradingView",
+  "author": "Mikhail Cheberya <mikhail@idope.ru>",
+  "license": "MIT"
+}
