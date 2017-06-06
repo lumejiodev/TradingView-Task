@@ -2,6 +2,10 @@
 		      Layout Elements
    ========================================= */
 
+body {
+    background: $ca-body;
+}
+
 .wrapper {
     box-sizing: border-box;
     width: 90%;

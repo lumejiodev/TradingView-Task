@@ -3,6 +3,12 @@
    ========================================= */
 
 .user-row {
+    background: $ca-table-row;
+
+    &:nth-of-type(even) {
+        background: $ca-table-row-alt;
+    }
+
     &__rating {
         &::before {
             content: url($p-images + 'icons/rating.png');

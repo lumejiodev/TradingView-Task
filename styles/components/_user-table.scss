@@ -1,1 +1,15 @@
-//
+/* =========================================
+		       User-table Styles
+   ========================================= */
+
+.user-table {
+    border: 1px solid $ca-table-border;
+
+    &__head {
+        background: $ca-table-head;
+    }
+
+    &__expand {
+        background: $ca-table-row-alt;
+    }
+}
