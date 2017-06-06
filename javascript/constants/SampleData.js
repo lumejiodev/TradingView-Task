@@ -1,6 +1,7 @@
 export default [
     {
         name: 'John Adams',
+        image: '/images/people/person0.jpg',
         rating: 102,
         ideas: 0,
         following: 52,
@@ -9,6 +10,7 @@ export default [
     },
     {
         name: 'Kevin Malcolm',
+        image: '/images/people/person1.jpg',
         rating: 1472,
         ideas: 20,
         following: 19,
@@ -17,6 +19,7 @@ export default [
     },
     {
         name: 'James Madison',
+        image: '/images/people/person2.jpg',
         rating: 32,
         ideas: 0,
         following: 2,
@@ -25,6 +28,7 @@ export default [
     },
     {
         name: 'James Monroe',
+        image: '/images/people/person3.jpg',
         rating: 3086,
         ideas: 53,
         following: 1059,
@@ -33,6 +37,7 @@ export default [
     },
     {
         name: 'Andrew Jackson',
+        image: false,
         rating: 102,
         ideas: 0,
         following: 50,

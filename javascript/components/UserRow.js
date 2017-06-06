@@ -1,4 +1,5 @@
 import React from 'react';
+import noPersonImage from '../constants/NoPersonImage';
 
 export default class UserRow extends React.Component {
     constructor( props ) {
@@ -23,6 +24,7 @@ export default class UserRow extends React.Component {
         const user = this.props.user;
         return <li className="user-row">
             <div className="user-row__column user-row__column--person">
+                <img src={user.image || noPersonImage} alt={user.name} />
                 <span>{user.name}</span>
                 <span className="user-row__number-data">{user.rating}</span>
                 <span onClick={this.toggleFollow}>{ this.state.marked ? 'Unfollow' : 'Follow' }</span>
