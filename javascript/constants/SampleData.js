@@ -5,6 +5,7 @@ export default [
         ideas: 0,
         following: 52,
         followers: 0,
+        marked: false,
     },
     {
         name: 'Kevin Malcolm',
@@ -12,6 +13,7 @@ export default [
         ideas: 20,
         following: 19,
         followers: 26,
+        marked: false,
     },
     {
         name: 'James Madison',
@@ -19,6 +21,7 @@ export default [
         ideas: 0,
         following: 2,
         followers: 0,
+        marked: true,
     },
     {
         name: 'James Monroe',
@@ -26,6 +29,7 @@ export default [
         ideas: 53,
         following: 1059,
         followers: 45,
+        marked: true,
     },
     {
         name: 'Andrew Jackson',
@@ -33,5 +37,6 @@ export default [
         ideas: 0,
         following: 50,
         followers: 0,
+        marked: false,
     },
 ];
