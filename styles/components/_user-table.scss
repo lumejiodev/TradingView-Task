@@ -7,6 +7,7 @@
 
     &__head {
         background: $ca-table-head;
+        border-bottom: 1px solid $ca-table-head-border;
     }
 
     &__expand {

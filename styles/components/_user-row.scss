@@ -4,9 +4,14 @@
 
 .user-row {
     background: $ca-table-row;
+    border-bottom: 1px solid $ca-table-row-border;
 
     &:nth-of-type(even) {
         background: $ca-table-row-alt;
+    }
+
+    &:last-of-type {
+        border-bottom: none;
     }
 
     &__rating {
