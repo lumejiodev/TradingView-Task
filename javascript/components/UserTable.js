@@ -32,9 +32,17 @@ export default class UserTable extends React.Component {
             );
         }
 
-        return <div>
-            {userRows}
-            <div onClick={this.handleShowMore}>Show more</div>
+        return <div className="user-table">
+            <div className="user-table__head">
+                <div className="user-table__head-column user-table__head-column--person" />
+                <div className="user-table__head-column">Ideas</div>
+                <div className="user-table__head-column">Following</div>
+                <div className="user-table__head-column">Followers</div>
+            </div>
+            <ul className="user-table__list">
+                {userRows}
+            </ul>
+            <div className="user-table__expand" onClick={this.handleShowMore}>Show more</div>
         </div>
     }
 }

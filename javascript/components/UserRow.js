@@ -21,14 +21,21 @@ export default class UserRow extends React.Component {
 
     render() {
         const user = this.props.user;
-        return <div>
-            <p>{user.name}</p>
-            <p>{user.rating}</p>
-            <p>{user.ideas}</p>
-            <p>{user.following}</p>
-            <p>{user.followers}</p>
-            <span onClick={this.toggleFollow}>{ this.state.marked ? 'Unfollow' : 'Follow' }</span>
-            <hr/>
-        </div>
+        return <li className="user-row">
+            <div className="user-row__column user-row__column--person">
+                <span>{user.name}</span>
+                <span className="user-row__number-data">{user.rating}</span>
+                <span onClick={this.toggleFollow}>{ this.state.marked ? 'Unfollow' : 'Follow' }</span>
+            </div>
+            <div className="user-row__column">
+                <span className="user-row__number-data">{user.ideas}</span>
+            </div>
+            <div className="user-row__column">
+                <span className="user-row__number-data">{user.following}</span>
+            </div>
+            <div className="user-row__column">
+                <span className="user-row__number-data">{user.followers}</span>
+            </div>
+        </li>
     }
 }
