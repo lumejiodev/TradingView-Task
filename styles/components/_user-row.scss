@@ -1,1 +1,19 @@
-//
+/* =========================================
+		        User-row Styles
+   ========================================= */
+
+.user-row {
+    &__rating {
+        &::before {
+            content: url($p-images + 'icons/rating.png');
+        }
+    }
+
+    &__follow {
+        background: url($p-images + 'icons/plus.png') no-repeat;
+
+        &--applied {
+            background-image: url($p-images + 'icons/tick.png');
+        }
+    }
+}

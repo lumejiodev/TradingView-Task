@@ -1,0 +1,11 @@
+/* =========================================
+		      Application Styles
+   ========================================= */
+
+.application {
+    &__header {
+        &::before {
+            content: url($p-images + 'icons/people.png');
+        }
+    }
+}

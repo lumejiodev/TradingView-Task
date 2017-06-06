@@ -26,8 +26,13 @@ export default class UserRow extends React.Component {
             <div className="user-row__column user-row__column--person">
                 <img src={user.image || noPersonImage} alt={user.name} />
                 <span>{user.name}</span>
-                <span className="user-row__number-data">{user.rating}</span>
-                <span onClick={this.toggleFollow}>{ this.state.marked ? 'Unfollow' : 'Follow' }</span>
+                <div className="user-row__rating">
+                    <span className="user-row__number-data">{user.rating}</span>
+                </div>
+                <span
+                    onClick={this.toggleFollow}
+                    className={ 'user-row__follow' + (this.state.marked ? ' user-row__follow--applied' : '') }
+                >{ this.state.marked ? 'Unfollow' : 'Follow' }</span>
             </div>
             <div className="user-row__column">
                 <span className="user-row__number-data">{user.ideas}</span>
