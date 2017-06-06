@@ -5,7 +5,8 @@
   "author": "Mikhail Cheberya <mikhail@idope.ru>",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server",
+    "prod": "NODE_ENV='production' webpack -p"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.1",
