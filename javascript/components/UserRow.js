@@ -23,8 +23,10 @@ export default class UserRow extends React.Component {
     render() {
         const user = this.props.user;
         return <li className="user-row">
-            <div className="user-row__column user-row__column--person">
+            <div className="user-row__column user-row__column--photo">
                 <img src={user.image || noPersonImage} alt={user.name} />
+            </div>
+            <div className="user-row__column user-row__column--person">
                 <span>{user.name}</span>
                 <div className="user-row__rating">
                     <span className="user-row__number-data">{user.rating}</span>

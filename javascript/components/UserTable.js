@@ -34,6 +34,7 @@ export default class UserTable extends React.Component {
 
         return <div className="user-table">
             <div className="user-table__head">
+                <div className="user-table__head-column user-table__head-column--photo" />
                 <div className="user-table__head-column user-table__head-column--person" />
                 <div className="user-table__head-column">Ideas</div>
                 <div className="user-table__head-column">Following</div>

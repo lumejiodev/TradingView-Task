@@ -3,6 +3,7 @@
    ========================================= */
 
 .user-row {
+    display: flex;
     background: $ca-table-row;
     border-bottom: 1px solid $ca-table-row-border;
 
@@ -12,6 +13,18 @@
 
     &:last-of-type {
         border-bottom: none;
+    }
+
+    &__column {
+        flex: 1 0 0;
+
+        &--photo {
+            flex-grow: 0;
+        }
+
+        &--person {
+            flex-grow: 4;
+        }
     }
 
     &__rating {
