@@ -40,13 +40,13 @@ export default class UserRow extends React.Component {
                     className={ 'user-row__follow' + (this.state.marked ? ' user-row__follow--applied' : '') }
                 >{ this.state.marked ? 'Unfollow' : 'Follow' }</span>
             </div>
-            <div className="user-row__column">
+            <div className="user-row__column user-row__column--data">
                 <span className="user-row__number-data">{user.ideas}</span>
             </div>
-            <div className="user-row__column">
+            <div className="user-row__column user-row__column--data">
                 <span className="user-row__number-data">{user.following}</span>
             </div>
-            <div className="user-row__column">
+            <div className="user-row__column user-row__column--data">
                 <span className="user-row__number-data">{user.followers}</span>
             </div>
         </li>

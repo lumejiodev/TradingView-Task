@@ -25,6 +25,12 @@
         &--person {
             flex-grow: 4;
         }
+
+        &--data {
+            min-width: 50px;
+            padding-right: 26px;
+            text-align: right;
+        }
     }
 
     &__expand {

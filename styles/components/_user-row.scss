@@ -4,6 +4,7 @@
 
 .user-row {
     display: flex;
+    align-items: center;
     background: $ca-table-row;
     padding: .375em .5em;
     border-bottom: 1px solid $ca-table-row-border;
@@ -27,6 +28,13 @@
 
         &--person {
             flex-grow: 4;
+            text-align: left;
+        }
+
+        &--data {
+            min-width: 50px;
+            padding-right: 26px;
+            text-align: right;
         }
     }
 
