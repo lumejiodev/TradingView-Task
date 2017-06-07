@@ -3,12 +3,17 @@
    ========================================= */
 
 .application {
+    margin-top: 1em;
+
     &__header {
-        font-size: 1.25em;
         text-transform: uppercase;
+        margin-bottom: .4375em;
 
         &::before {
+            position: relative;
             content: url($p-images + 'icons/people.png');
+            top: 2px;
+            margin-right: 4px;
         }
     }
 }

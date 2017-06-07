@@ -3,8 +3,7 @@ import UserTable from './components/UserTable';
 
 export default class Application extends React.Component {
     render() {
-        return <div className="
-">
+        return <div className="application">
             <div className="application__header">People</div>
             <UserTable />
         </div>

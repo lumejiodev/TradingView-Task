@@ -6,16 +6,17 @@
     position: relative;
     margin-bottom: 3em;
     border: 1px solid $ca-table-border;
+    border-radius: $border-radius;
 
     &__head {
         display: flex;
         background: $ca-table-head;
+        padding: 4px 0 7px;
         border-bottom: 1px solid $ca-table-head-border;
     }
 
     &__head-column {
         flex: 1 0 0;
-        font-size: 1.25em;
         font-weight: normal;
 
         &--photo {
@@ -45,7 +46,7 @@
         width: $width;
         height: $height;
         margin-left: $width / -2;
-        font-size: .85em;
+        font-size: .68em;
         font-weight: bold;
         line-height: $height;
         text-transform: uppercase;

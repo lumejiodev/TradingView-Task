@@ -3,7 +3,7 @@
    ========================================= */
 
 body {
-    font: $fw-body $fz-body/1.25 $ff-body;
+    font: $fw-body #{$fz-body}/1.25 $ff-body;
     color: $ca-text;
     background: $ca-body;
 }
