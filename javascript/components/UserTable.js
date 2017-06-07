@@ -6,10 +6,14 @@ export default class UserTable extends React.Component {
     constructor( props ) {
         super( props );
 
+        this.USERS_TOTAL = 24;
         this.SAMPLE_DATA = sampleData;
 
+        this.USERS_PER_TIME = 10;
+
         this.state = {
-            visibleAmount: 10
+            visibleAmount: this.USERS_PER_TIME,
+            noUsersLeft: false,
         };
 
         this.handleShowMore = this.handleShowMore.bind( this );
@@ -17,9 +21,14 @@ export default class UserTable extends React.Component {
 
     handleShowMore() {
         this.setState( prevState => {
-            return {
-                visibleAmount: prevState.visibleAmount + 10
+            let newState = {
+                visibleAmount: prevState.visibleAmount + this.USERS_PER_TIME
+            };
+            if (newState.visibleAmount >= this.USERS_TOTAL) {
+                newState.visibleAmount = this.USERS_TOTAL;
+                newState.noUsersLeft = true;
             }
+            return newState;
         });
     }
 
@@ -43,7 +52,9 @@ export default class UserTable extends React.Component {
             <ul className="user-table__list">
                 {userRows}
             </ul>
-            <div className="user-table__expand" onClick={this.handleShowMore}>Show more</div>
+            {!this.state.noUsersLeft && (
+                <div className="user-table__expand" onClick={this.handleShowMore}>Show more</div>
+            )}
         </div>
     }
 }
