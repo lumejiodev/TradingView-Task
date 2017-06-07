@@ -3,6 +3,8 @@
    ========================================= */
 
 .user-table {
+    position: relative;
+    margin-bottom: 3em;
     border: 1px solid $ca-table-border;
 
     &__head {
@@ -34,9 +36,24 @@
     }
 
     &__expand {
+        $width: 173px;
+        $height: 27px;
+
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: $width;
+        height: $height;
+        margin-left: $width / -2;
         font-size: .85em;
         font-weight: bold;
+        line-height: $height;
         text-transform: uppercase;
+        text-align: center;
+        border: 1px solid $ca-table-border;
+        border-top-style: dashed;
+        border-radius: 0 0 $border-radius $border-radius;
         background: $ca-table-row-alt;
+        cursor: pointer;
     }
 }
