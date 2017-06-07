@@ -5,6 +5,7 @@
 .user-row {
     display: flex;
     background: $ca-table-row;
+    padding: .375em .5em;
     border-bottom: 1px solid $ca-table-row-border;
 
     &:nth-of-type(even) {
@@ -20,10 +21,21 @@
 
         &--photo {
             flex-grow: 0;
+            flex-basis: 50px;
+            padding-right: .5em;
         }
 
         &--person {
             flex-grow: 4;
+        }
+    }
+
+    &__photo {
+        border: 1px solid transparent;
+        border-radius: $border-radius;
+
+        &--no-photo {
+            border-color: $ca-table-border;
         }
     }
 

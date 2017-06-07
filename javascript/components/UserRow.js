@@ -24,7 +24,11 @@ export default class UserRow extends React.Component {
         const user = this.props.user;
         return <li className="user-row">
             <div className="user-row__column user-row__column--photo">
-                <img src={user.image || noPersonImage} alt={user.name} />
+                <img
+                    src={user.image || noPersonImage}
+                    alt={user.name}
+                    className={'user-row__photo' + (user.image ? '' : ' user-row__photo--no-photo') }
+                />
             </div>
             <div className="user-row__column user-row__column--person">
                 <span>{user.name}</span>

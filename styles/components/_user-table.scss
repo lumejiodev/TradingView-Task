@@ -16,6 +16,8 @@
 
         &--photo {
             flex-grow: 0;
+            flex-basis: 50px;
+            padding-right: .375em;
         }
 
         &--person {
