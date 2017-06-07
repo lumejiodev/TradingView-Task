@@ -13,6 +13,8 @@
 
     &__head-column {
         flex: 1 0 0;
+        font-size: 1.25em;
+        font-weight: normal;
 
         &--photo {
             flex-grow: 0;
@@ -26,6 +28,9 @@
     }
 
     &__expand {
+        font-size: .85em;
+        font-weight: bold;
+        text-transform: uppercase;
         background: $ca-table-row-alt;
     }
 }

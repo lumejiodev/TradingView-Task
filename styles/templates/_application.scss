@@ -4,6 +4,9 @@
 
 .application {
     &__header {
+        font-size: 1.25em;
+        text-transform: uppercase;
+
         &::before {
             content: url($p-images + 'icons/people.png');
         }

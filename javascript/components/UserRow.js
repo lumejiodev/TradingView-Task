@@ -31,7 +31,7 @@ export default class UserRow extends React.Component {
                 />
             </div>
             <div className="user-row__column user-row__column--person">
-                <span>{user.name}</span>
+                <span className="user-row__name">{user.name}</span>
                 <div className="user-row__rating">
                     <span className="user-row__number-data">{user.rating}</span>
                 </div>

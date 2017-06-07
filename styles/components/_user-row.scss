@@ -39,6 +39,12 @@
         }
     }
 
+    &__name {
+        font-size: 1.1em;
+        font-weight: bold;
+        color: $ca-link;
+    }
+
     &__rating {
         &::before {
             content: url($p-images + 'icons/rating.png');
@@ -51,5 +57,9 @@
         &--applied {
             background-image: url($p-images + 'icons/tick.png');
         }
+    }
+
+    &__number-data {
+        font-size: 1.4em;
     }
 }
