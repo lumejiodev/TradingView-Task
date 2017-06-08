@@ -7,7 +7,8 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const PATHS = {
     app: path.join( __dirname, 'index' ),
     build: path.join( __dirname, 'public', 'build' ),
-    public: path.join( __dirname, 'public' )
+    public: path.join( __dirname, 'public' ),
+    devScripts: path.join( __dirname, 'dev-index' ),
 };
 
 exports.commonConfig = () => ({
@@ -35,6 +36,7 @@ exports.developmentConfig = () => ({
     entry: [
         'webpack-dev-server/client?http://localhost:8080',
         'webpack/hot/only-dev-server',
+        PATHS.devScripts,
     ],
     devtool: 'eval-source-map'
 });
