@@ -162,3 +162,22 @@ exports.devServer = () => ({
         new webpack.NamedModulesPlugin()
     ]
 });
+
+exports.modernizrConfig = () => ({
+    module: {
+        rules: [
+            {
+                test: /\.modernizrrc$/,
+                use: [
+                    'modernizr-loader',
+                    'json-loader'
+                ]
+            }
+        ]
+    },
+    resolve: {
+        alias: {
+            modernizr$: path.join(__dirname, '.modernizrrc')
+        }
+    }
+});

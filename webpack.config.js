@@ -5,6 +5,7 @@ const parts = require('./webpack.parts');
 const commonConfig = merge([
     parts.commonConfig(),
     parts.lintStyles(),
+    parts.modernizrConfig(),
     parts.loadJavaScript({ exclude: [/node_modules/] })
 ]);
 

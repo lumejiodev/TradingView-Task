@@ -17,6 +17,8 @@
     "clean-webpack-plugin": "^0.1.16",
     "css-loader": "^0.28.4",
     "extract-text-webpack-plugin": "^2.1.0",
+    "modernizr": "^3.5.0",
+    "modernizr-loader": "^1.0.1",
     "node-sass": "^4.5.3",
     "postcss": "^6.0.1",
     "postcss-loader": "^2.0.5",
