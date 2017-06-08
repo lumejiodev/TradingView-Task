@@ -9,24 +9,43 @@
     border-radius: $border-radius;
 
     &__head {
+        box-sizing: border-box;
         display: flex;
         background: $ca-table-head;
-        padding: 4px 0 7px;
+        padding: 4px .5em 7px;
         border-bottom: 1px solid $ca-table-head-border;
+
+        .no-flexbox & {
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+        }
     }
 
     &__head-column {
         flex: 1 0 0;
         font-weight: normal;
 
+        .no-flexbox & {
+            display: table-cell;
+        }
+
         &--photo {
             flex-grow: 0;
             flex-basis: 50px;
             padding-right: .375em;
+
+            .no-flexbox & {
+                width: 50px;
+            }
         }
 
         &--person {
             flex-grow: 4;
+
+            .no-flexbox & {
+                width: 50%;
+            }
         }
 
         &--data {

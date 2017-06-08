@@ -3,6 +3,7 @@
    ========================================= */
 
 .user-row {
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     background: $ca-table-row;
@@ -17,25 +18,48 @@
         border-bottom: none;
     }
 
+    .no-flexbox & {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+    }
+
     &__column {
         flex: 1 0 0;
+
+        .no-flexbox & {
+            display: table-cell;
+        }
 
         &--photo {
             flex-grow: 0;
             flex-basis: 50px;
             padding-right: .5em;
+
+            .no-flexbox & {
+                width: 50px;
+            }
         }
 
         &--person {
             flex-grow: 4;
             align-self: flex-start;
             text-align: left;
+
+            .no-flexbox & {
+                width: 50%;
+                vertical-align: top;
+            }
         }
 
         &--data {
             min-width: 50px;
             padding-right: 26px;
             text-align: right;
+
+            .no-flexbox & {
+                vertical-align: middle;
+            }
         }
     }
 
