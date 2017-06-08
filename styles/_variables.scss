@@ -16,6 +16,7 @@ $color-dark-gray: #5a5a5a;
 $color-gray: #b6b6b6;
 $color-blue: #2c76c7;
 $color-green: #a4c574;
+$color-red: #c37373;
 
 // Colors applied
 $ca-body: $color-light-gray;
@@ -23,6 +24,7 @@ $ca-text: $color-dark-gray;
 $ca-link: $color-blue;
 $ca-state-neutral: $color-gray;
 $ca-state-okay: $color-green;
+$ca-state-negative: $color-red;
 
 // Table colors
 $ca-table-border: #bfbfbf;
