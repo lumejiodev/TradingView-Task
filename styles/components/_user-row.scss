@@ -28,6 +28,7 @@
 
         &--person {
             flex-grow: 4;
+            align-self: flex-start;
             text-align: left;
         }
 
@@ -41,6 +42,7 @@
     &__photo {
         border: 1px solid transparent;
         border-radius: $border-radius;
+        font-size: 0;
 
         &--no-photo {
             border-color: $ca-table-border;
@@ -48,23 +50,31 @@
     }
 
     &__name {
+        display: inline-block;
+        vertical-align: top;
+        padding: .225em 0;
         font-size: .85em;
         font-weight: bold;
         color: $ca-link;
     }
 
     &__rating {
+        margin-top: .31em;
+
         &::before {
             content: url($p-images + 'icons/rating.png');
+            margin-right: 4px;
         }
     }
 
     &__follow {
         $width: 14px;
 
-        display: block;
+        display: inline-block;
+        vertical-align: top;
         width: $width;
         height: $width;
+        margin: 4px 10px;
         background: $ca-state-neutral url($p-images + 'icons/plus.png') center center no-repeat;
         border-radius: $width/2;
         cursor: pointer;
